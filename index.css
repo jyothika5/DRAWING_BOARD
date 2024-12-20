@@ -1,20 +1,20 @@
 *{
     margin: 0%;
-    
 }
-body{
-    
-    background: linear-gradient(to bottom left, #0c1fa0, #012c6c, #014fb5);
-    background-attachment: fixed;
+body{   
+background: linear-gradient(to bottom left, #0c1fa0, #023583, #014fb5);
+background-attachment: fixed;
+display: flex;
+
+height: 100vh;
+width: 100vw;
+
 }
 .total{
-    display: flex;
-    
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    width: 300px;
-    background-color: #a7e7be;
-    
-    
+display: flex;
+padding: 300px;
+padding-left: 600px;
+background-color: rgb(104, 6, 209);
+border: 2px dotted rgb(224, 190, 22);
+margin: auto;
 } 
