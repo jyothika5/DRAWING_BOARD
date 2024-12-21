@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DRAWING-BOARD</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
@@ -18,9 +19,18 @@
         </div>
         <!-- Button container -->
         <div class="button-container">
-            <button id="pencil-tool" class="btn">Pencil</button>
-            <button id="eraser-tool" class="btn">Eraser</button>
-            <button id="clear-canvas" class="btn">Clear Canvas</button>
+            <button id="pencil-tool" class="btn"><i class="fa-solid fa-pencil fa-spin"></i></button>
+            <button id="eraser-tool" class="btn"><i class="fa-sharp-duotone fa-solid fa-eraser" style="--fa-primary-color: #e32400; --fa-secondary-color: #e32400;"></i></button>
+            <button id="clear-canvas" class="btn"><i class="fa-sharp fa-solid fa-xmark" style="color: #e32400;"></i></button>
+        </div>
+        
+        <!-- Controls for Color, Thickness, and Tool Selection -->
+        <div class="controls">
+            <label for="color-picker">Color: </label>
+            <input type="color" id="color-picker" value="#000000">
+            
+            <label for="thickness-slider">Thickness: </label>
+            <input type="range" id="thickness-slider" min="1" max="30" value="5">
         </div>
     </center>
 </body>
