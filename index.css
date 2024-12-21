@@ -1,27 +1,32 @@
 *{
     margin: 0%;
+    box-sizing: border-box;
+
 }
-body{   
-background: linear-gradient(to bottom left, #0c1fa0, #023583, #014fb5);
-background-attachment: fixed;
-display: flex;
-height: 100vh;
-width: 100vw; 
-
-
+body{
+    background: linear-gradient(to bottom left, #0c1fa0, #023583, #014fb5);
+    background-attachment: fixed;
+    color: rgb(252, 84, 0);
+    margin: 12%;
+    font-size: xx-large;
+    
 }
 .total{
-display: flex;
-padding: 300px;
-padding-left: 600px;
-background-color: rgb(104, 6, 209);
-border: 2px dotted rgb(224, 190, 22);
-margin: auto;
-text-align:start;
-box-shadow: #5183c4;
-text-decoration: none;
-} 
-.total{
-justify-content: center;
+    display: flex;
+    height: 60vh;
+    width: 65vw;
+    background-color: rgb(141, 79, 17);
+    justify-content: center;
+    align-items: center;
 }
-
+.total:hover{
+    background-color: rgb(215, 117, 19);
+}
+.can{
+    display: flex;
+    height: 48vh;
+    width: 53vw;
+    border: 3px dotted black;
+    justify-content: center;
+    align-items: center;
+}
