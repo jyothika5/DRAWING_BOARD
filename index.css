@@ -5,68 +5,52 @@
 
 body {
     background: linear-gradient(to bottom left, #0c1fa0, #023583, #014fb5);
+    background-attachment: fixed;
     color: rgb(252, 84, 0);
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-h1 {
-    font-size: 2rem;
-    color: #db2777;
-    background: #fecdd3;
-    padding: 10px;
-    border-radius: 8px;
+    margin: 12%;
+    font-size: xx-large;
 }
 
 .total {
     display: flex;
-    flex-direction: column;
+    height: 60vh;
+    width: 65vw;
+    background-color: rgb(141, 79, 17);
     justify-content: center;
-    margin-bottom: 20px;
+    align-items: center;
+}
+
+.total:hover {
+    background-color: rgb(215, 117, 19);
 }
 
 .can {
-    background-color: #ffffff;
-    border-radius: 8px;
-    border: 2px solid #f9a8d4;
-    width: 500px;
-    height: 400px;
-}
-
-.button-container {
     display: flex;
-    gap: 20px;
+    height: 48vh;
+    width: 53vw;
+    border: 3px dotted black;
     justify-content: center;
-    margin-top: 20px;
+    align-items: center;
 }
 
+/* Button Container Styles */
+.button-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
 .btn {
-    font-size: 2rem;
-    background-color: #f3f4f6;
+    padding: 0.5rem 1.5rem;
+    background-color: rgb(215, 117, 19);
+    color: white;
     border: none;
     border-radius: 8px;
-    width: 50px;
-    height: 50px;
     cursor: pointer;
+    font-size: 1rem;
     transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #e5e7eb;
-}
-
-.controls {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-input[type="color"], input[type="range"] {
-    margin: 5px 0;
+    background-color: rgb(255, 165, 0);
 }
