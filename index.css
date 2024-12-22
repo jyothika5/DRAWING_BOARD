@@ -38,7 +38,7 @@ body {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 10rem;
 }
 .btn {
     padding: 0.5rem 1.5rem;
@@ -54,10 +54,4 @@ body {
 .btn:hover {
     background-color: rgb(255, 165, 0);
 }
-.hidden{
-   width: 100px;
-   border-radius: 50%;
-}
-#color-picker{
-    height: 100px;
-}
+
