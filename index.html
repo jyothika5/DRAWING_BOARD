@@ -15,6 +15,17 @@
         <div class="total">
             <div class="can">
                 <!-- Canvas goes here -->
+                 <!-- <canvas id="canvas" width="800" height="600"></canvas>
+                 </div>
+                 <div class="tool">
+                    <button class="btn" onclick="clearCanvas()">Clear</button>
+                    <button class="btn" onclick="saveCanvas()">Save</button>
+                    <button class="btn" onclick="undoCanvas()">Undo</button>
+                    <button class="btn" onclick="redoCanvas()">Redo</button>
+                    <button class="btn" onclick="changeColor()">Change Color</button>
+                    <button class="btn" onclick="changeSize()">Change Size</button>
+                    <button class="btn" onclick="changeShape()">Change Shape</button>
+                     -->
             </div>
         </div>
         <!-- Button container -->
@@ -22,6 +33,11 @@
             <button id="pencil-tool"  class="btn"><i class="fa-solid fa-pencil fa-spin"></i></button>
             <button id="eraser-tool"  class="btn"><i class="fa-sharp-duotone fa-solid fa-eraser fa-spin" style="--fa-primary-color: #e32400; --fa-secondary-color: #e32400;"></i></button>
             <button id="clear-canvas" class="btn"><i class="fa-sharp fa-solid fa-xmark fa-spin" style="color: #e32400;"></i></button>
+            <div class="color-picker">
+                <input type="color" id="color-picker" class="hidden" onchange="update_color(event)">
+                <div id="color-circle" class="color-circle" onclick="document.getElementById('color-picker').click()"></div>
+            </div>
+
         </div>
     </center>
 </body>
