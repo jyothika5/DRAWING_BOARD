@@ -2,7 +2,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 body {
     background: linear-gradient(to bottom left, #0c1fa0, #023583, #014fb5);
     background-attachment: fixed;
@@ -10,7 +9,6 @@ body {
     margin: 12%;
     font-size: xx-large;
 }
-
 .total {
     display: flex;
     height: 60vh;
@@ -19,11 +17,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .total:hover {
     background-color: rgb(215, 117, 19);
 }
-
 .can {
     display: flex;
     height: 48vh;

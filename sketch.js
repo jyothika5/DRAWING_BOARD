@@ -51,11 +51,9 @@ document.getElementById('pencil-tool').addEventListener('click', () => {
 document.getElementById('eraser-tool').addEventListener('click', () => {
     current_tool = 'eraser';
 });
-
 document.getElementById('clear-canvas').addEventListener('click', () => {
     background(255);
 });
-
 function touchMoved() {
     return false;
 }
