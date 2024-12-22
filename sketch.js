@@ -40,6 +40,7 @@ document.getElementById('color-picker').addEventListener('input', (event) => {
 
 document.getElementById('thickness-slider').addEventListener('input', (event) => {
     current_thickness = parseInt(event.target.value, 10);
+    document.getElementById('thickness-slider').style.height = current_thickness;    
 });
 
 document.getElementById('pencil-tool').addEventListener('click', () => {
@@ -57,4 +58,3 @@ document.getElementById('clear-canvas').addEventListener('click', () => {
 function touchMoved() {
     return false;
 }
-
