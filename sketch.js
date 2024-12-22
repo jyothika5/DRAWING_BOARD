@@ -40,7 +40,8 @@ document.getElementById('color-picker').addEventListener('input', (event) => {
 
 document.getElementById('thickness-slider').addEventListener('input', (event) => {
     current_thickness = parseInt(event.target.value, 10);
-    document.getElementById('thickness-slider').style.height = current_thickness;    
+    document.getElementById('thickness-slider').style.setProperty("--thumb-size",`{current_thickness}px`);
+    document.getElementById('thickness-slider').style.backgroundColor = "orange";
 });
 
 document.getElementById('pencil-tool').addEventListener('click', () => {
