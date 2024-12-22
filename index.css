@@ -6,7 +6,7 @@
 body {
     background: linear-gradient(to bottom left, #0c1fa0, #023583, #014fb5);
     background-attachment: fixed;
-    color: rgb(252, 84, 0);
+    color: rgb(255, 255, 255);
     margin: 12%;
     font-size: xx-large;
 }
