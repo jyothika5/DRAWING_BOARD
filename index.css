@@ -55,7 +55,7 @@ body {
     background-color: rgb(255, 165, 0);
 }
 /* CSS for the drawing area (paper) */
-.paper {
+#paper {
     background-color: white; /* White background (bg-white) */
     border: 2px solid #f72606; /* Light pink border (border-pink-200) */
     border-radius: 0.75rem; /* Slightly rounded corners (rounded-xl) */
