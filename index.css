@@ -54,4 +54,6 @@ body {
 .btn:hover {
     background-color: rgb(255, 165, 0);
 }
-
+.hidden{
+    /* display: none; */
+}
