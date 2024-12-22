@@ -9,3 +9,44 @@ let canvas
             canvas.parent('paper')
             background(255)
         }
+        function draw() {
+            if (mouseIsPressed) {
+                strokeWeight(current_thickness)
+                
+                if (current_tool === 'pencil') {
+                    stroke(current_color)
+                } else if (current_tool === 'eraser') {
+                    stroke(255)
+                }
+                
+                if (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height) {
+                    line(pmouseX, pmouseY, mouseX, mouseY)
+                }
+            }
+            
+        }
+        function windowResized() {
+            const canvas_width = min(710, windowWidth * 0.9)
+            resizeCanvas(canvas_width, 400)
+        }
+        document.getElementById('color-picker').addEventListener('input', (event) => {
+            current_color = event.target.value
+            current_tool = 'pencil'
+        })
+
+        document.getElementById('thickness-slider').addEventListener('input', (event) => {
+            current_thickness = event.target.value
+        })
+
+        document.getElementById('pencil-tool').addEventListener('click', () => {
+            current_tool = 'pencil'
+        })
+
+        document.getElementById('eraser-tool').addEventListener('click', () => {
+            current_tool = 'eraser'
+        })
+
+        document.getElementById('clear-canvas').addEventListener('click', () => {
+            background(255)
+        })
+        
