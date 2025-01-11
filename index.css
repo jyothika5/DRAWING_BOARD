@@ -48,9 +48,9 @@ body {
 }
 
 .btn:hover {
-    background-color: rgb(255, 165, 0);
+    background-color: rgb(255, 165, 10);
 }
-/* CSS for the drawing area (paper) */
+
 #paper {
     background-color: white; /* White background (bg-white) */
     border: 2px solid #f72606; /* Light pink border (border-pink-200) */
